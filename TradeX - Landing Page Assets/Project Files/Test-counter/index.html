@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* CSS for styling */
+        #visitsNum {
+            font-size: 3em;
+            color: black;
+            transition: font-size 0.5s, color 0.5s;
+        }
+        .head1 {
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+    <div id="visitsNum">8,008,13</div>
+    <p>
+        <span class="head1">
+        <span class="ceilingLimit" style="visibility: hidden;">9,008,13</span>
+    </p>
+
+    <script>
+        // Function to generate a random number
+        function getRand(max) {
+            return Math.floor(Math.random() * (max + 1));
+        }
+
+        // Function to update the counter
+        function updateCounter() {
+            var ceilingLimit = parseInt(document.querySelector('.ceilingLimit').textContent.replace(/,/g, ''));
+            var oldNum = parseInt(document.getElementById('visitsNum').textContent.replace(/,/g, ''));
+            var newNum;
+
+            // Decide whether to increase or decrease
+            if (Math.random() < 0.5) {
+                newNum = Math.max(oldNum - 5, 0); // Decrease by 5, but not below 0
+            } else {
+                newNum = Math.min(oldNum + 10, ceilingLimit); // Increase by 10, but not above ceilingLimit
+            }
+
+            // Update the counter text
+            document.getElementById('visitsNum').textContent = formatNumber(newNum);
+
+            // Change color based on increment/decrement
+            var numcolor = newNum > oldNum;
+            document.getElementById('visitsNum').style.color = numcolor;
+
+            // Trigger a reflow to apply CSS transitions
+            void document.getElementById('visitsNum').offsetWidth;
+            document.getElementById('visitsNum').style.fontSize = '5em';
+
+            // After transition, reset font size and color
+            setTimeout(function () {
+                document.getElementById('visitsNum').style.fontSize = '5em';
+                document.getElementById('visitsNum').style.color = 'black';
+            }, 500);
+        }
+
+        // Function to format number with commas
+        function formatNumber(number) {
+            return number.toLocaleString();
+        }
+
+        // Initial update
+        updateCounter();
+
+        // Periodically update the counter
+        setInterval(updateCounter, 1000);
+    </script>
+</body>
+</html>

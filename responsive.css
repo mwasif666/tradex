@@ -1,0 +1,209 @@
+
+@media all and (min-width: 360px) and (max-width: 767px){
+
+    .header .header-content h1 {
+        font-size: 51px;
+        font-weight: 900;
+        color: white;
+        line-height: 50px;
+    }
+    .header .header-content p {
+        font-size: 18px;
+    }
+    .navigation-list {
+        display: block;
+        padding: 0px;
+        margin: 0;
+    }
+    .list-inline-item{
+        border-bottom: 2px solid white;
+    }
+    .counter-section .text-1 h2 {
+        text-align: center;
+    }
+    .counter-section .text-header{
+        justify-content: center;
+    }
+    .counter-section .text-header h1 {
+        font-size: 80px;
+        padding-top: 11px;
+    }
+    #visitsNum {
+        font-size: 76px !important;
+      }
+      .tables table td {
+        font-size: 12px;
+    }
+    .tables table th {
+        font-size: 15px;
+    }
+    .content-learn h1 {
+        font-size: 42px;
+    }
+    .content-learn.text-center h4 {
+        font-size: 14px;
+    }
+    .content-about-btn h1 {
+        font-size: 26px;
+    }
+    .testimonal-heading h1 {
+        font-size: 28px;
+    }
+    .frequency-heading h1 {
+        font-size: 28px;
+    }
+    .footer-top-content h1 {
+        font-size: 48px;
+        color: white;
+        font-weight: 700;
+        text-align: center;
+    }
+    .image-footer-logo img {
+        width: 47%;
+        padding-bottom: 30px;
+    }
+    .image-footer-logo {
+        display: flex;
+        justify-content: center;
+    }
+    .counter-section2 span{
+        font-size: 77px;
+    }
+    .footer .row:nth-child(4) ul li{
+        width: 70%;
+    }
+    .btn-footer-top button:nth-child(1) {
+        font-size: 18px;
+    }
+    .btn-footer-top button:nth-child(2) {
+        font-size: 18px;
+    }
+    .flip-carding .flip-card-back {
+        background-color: transparent;
+    }
+    .header-card-rating .head-card-rating i {
+        font-size: 30px;
+    }
+    .scrollable-body {
+        max-height: 300px; /* Adjust the height as needed */
+        animation: moveUpDown 100s infinite alternate; /* Adjust the animation duration and timing as needed */
+      }
+      
+      @keyframes moveUpDown {
+        0% {
+          transform: translateY(140px);
+        }
+        50% {
+          transform: translateY(-400px); /* Adjust the distance of movement */
+        }
+        100% {
+          transform: translateY(140px);
+        }
+      }
+      .content-form-section h1 {
+        font-size: 62px;
+        line-height: 65px;
+        margin-top: 0px;
+    }
+    .form-emailjs {
+        width: 100%;
+        padding: 50px 30px;
+    }
+}
+@media all and (min-width: 768px) and (max-width: 992px){
+    .header .header-content h1 {
+        font-size: 81px;
+        font-weight: 900;
+        color: white;
+        line-height: 100px;
+    }
+    .header .header-content p {
+        font-size: 18px;
+    }
+    .navigation-list {
+        display: block;
+        padding: 0px;
+        margin: 0;
+    }
+    .list-inline-item{
+        border-bottom: 2px solid white;
+    }
+    .testimonal-heading h1 {
+        font-size: 48px;
+        color: white;
+        text-align: center;
+        font-weight: 700;
+    }
+    .image-footer-logo img {
+        width: 47%;
+        padding-bottom: 30px;
+    }
+    .image-footer-logo {
+        display: flex;
+        justify-content: center;
+    }
+    .counter-section .text-1 h2 {
+        color: white;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 30px;
+    }
+    .counter-section .text-header h1 {
+        font-size: 55px;
+    }
+    
+}
+@media all and (min-width: 993px) and (max-width: 1200px){
+    .navigation-list .list-inline-item {
+        margin-left: 0;
+    }
+    .list-inline-item:not(:last-child){
+        margin-right: 0 !important;
+    }
+    .navigation-list {
+
+        justify-content: end;
+      }
+      .navigation-list {
+        padding-top: 25px;
+        display: flex;
+        gap: 15px;
+        justify-content: end;
+    }
+
+}
+@media all and (min-width: 1201px) and (max-width: 1500px){
+    .navigation-list .list-inline-item {
+        margin-left: 0;
+    }
+    .list-inline-item:not(:last-child){
+        margin-right: 0 !important;
+    }
+    .navigation-list {
+
+        justify-content: end;
+      }
+      .counter-section .text-header h1 {
+        color: var(--col2);
+        font-size: 90px;
+    }
+    .content-form-section h1 {
+        font-size: 62px;
+        line-height: 68px;
+
+    }
+    .form-emailjs {
+        width: 90%;
+    }
+}
+@media all and (min-width: 1201px) and (max-width: 1300px){
+   
+    .content-form-section h1 {
+        font-size: 62px;
+        line-height: 68px;
+
+    }
+    .form-emailjs {
+        width: 90%;
+    }
+}
